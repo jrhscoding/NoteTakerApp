@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 const notes = require('./db/db.json');
+console.log(notes);
 
 app.use(express.static('public'));
 
@@ -25,25 +26,31 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     const newNote = {
-        id: notes.length += 1,
+        id: notes.length + 1,
         title: req.body.title,
         text: req.body.text
     };
     // console.log(notes);
 
+    // console.log(notes.length)
+
     notes.push(newNote);
 
-    const updatedNotes = [];
+    // console.log(notes.length);
 
-    notes.forEach(note => {
-      if (note !== null) {
-        updatedNotes.push(note);
-      }
-    });
+    // console.log(notes);    
+
+    // const updatedNotes = [];
+
+    // notes.forEach(note => {
+    //   if (note !== null) {
+    //     updatedNotes.push(note);
+    //   }
+    // });
 
     
 
-    console.log(updatedNotes);
+    // console.log(updatedNotes);
 
     // console.log(notes);
 
@@ -51,11 +58,11 @@ app.post('/api/notes', (req, res) => {
 
     // console.log(JSON.stringify(notes, null, 2));
     
-    fs.writeFile(`${__dirname}/db/db.json`, JSON.stringify(updatedNotes, null, 2), (err) => {
+    fs.writeFile(`${__dirname}/db/db.json`, JSON.stringify(notes, null, 2), (err) => {
         if (err) {
             return res.status(500).json({err});
         }
-        res.json(updatedNotes);
+        res.json(notes);
     });
     // id, title text
 

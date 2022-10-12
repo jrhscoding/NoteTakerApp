@@ -1,37 +1,22 @@
 [
   {
     "id": 1,
-    "title": "new note",
-    "text": "blah"
+    "title": "asdf",
+    "text": "sdaf"
   },
   {
     "id": 2,
-    "title": "hello",
-    "text": "goodbye"
+    "title": "dsf",
+    "text": "dsafdsfadsf"
   },
   {
     "id": 3,
-    "title": "hello",
-    "text": "goodbye"
+    "title": "sadf",
+    "text": "dsafdsfdasfds"
   },
   {
     "id": 4,
-    "title": "sdfadsf",
-    "text": "dasfdsaf"
-  },
-  {
-    "id": 5,
-    "title": "fdsf",
-    "text": "dsaf"
-  },
-  {
-    "id": 6,
-    "title": "dsaf",
-    "text": "dfsaf"
-  },
-  {
-    "id": 7,
-    "title": "that food",
-    "text": "was bussin"
+    "title": "sdf",
+    "text": "dsfadfasdfads"
   }
 ]
