@@ -25,6 +25,7 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     const note = req.body;
+    console.log(note);
 
     // fs.writeFileSync(
     //     path.join(__dirname, './db/db.json'),
