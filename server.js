@@ -41,6 +41,8 @@ app.post('/api/notes', (req, res) => {
       }
     });
 
+    
+
     console.log(updatedNotes);
 
     // console.log(notes);
