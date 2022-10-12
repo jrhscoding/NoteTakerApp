@@ -24,12 +24,20 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-    const note = req.body;
-    console.log(note);
+    newNote = {
+        id: notes.length += 1,
+        title: req.body.title,
+        text: req.body.text
+    };
+    notes.push(newNote);
+    fs.writeFile(`${__dirname}/db/db.json`, JSON.stringify(notes, null, 2), (err) => {
+        if (err) {
+            return res.status(500).json({err});
+        }
+        res.json(notes);
+    });
+    // id, title text
 
-    // fs.writeFileSync(
-    //     path.join(__dirname, './db/db.json'),
-    // )
 });
 
 app.get('*', (req, res) => {
