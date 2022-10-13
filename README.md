@@ -22,10 +22,14 @@
   -[Questions](#questions)
 
   ## Installation
-  visit the heroku link or run npm i upon download, start your server, and visit your local host
+  visit the heroku link 
+  https://sleepy-tor-09394.herokuapp.com/
+  or run npm i upon download, start your server, and visit your local host
 
   ## Questions
   Visit my github repo here!
   https://github.com/jrhscoding
 
-  and feel free to email me at j.hernandez.92189@gmail.com with any questions
+  and feel free to email me at j.hernandez.92189@gmail.com with any questions.
+
+  (![Project Screenshot](screenshot.png))
