@@ -26,6 +26,6 @@
 
   ## Questions
   Visit my github repo here!
-  https://github.com/jrhs coding
+  https://github.com/jrhscoding
 
   and feel free to email me at j.hernandez.92189@gmail.com with any questions
